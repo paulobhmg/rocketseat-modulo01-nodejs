@@ -8,24 +8,24 @@ app = express();
  * DELETE - Remover determinado recurso
  */
 
- app.get('/projetos', (req, res) => res.json([
+ app.get('/projects', (req, res) => res.json([
    'Projeto 1',
    'Projeto 2'
  ]));
 
- app.post('/projetos', (req, res) => res.json([
+ app.post('/projects', (req, res) => res.json([
    'Projeto 1',
    'Projeto 2',
    'Projeto 3'
  ]));
 
- app.put('/projetos/:id', (req, res) => res.json([
+ app.put('/projects/:id', (req, res) => res.json([
    'Projeto 1',
    'Projeto 2',
    'Projeto sem nome'
  ]));
 
- app.delete('/projetos/:id', (req, res) => res.json([
+ app.delete('/projects/:id', (req, res) => res.json([
    'Projeto 2',
    'Projeto sem nome'
  ]));
